@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/logo.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+  <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Main styles -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>Tom Eloe</title>
+</head>
+<body>
+      
+  <div class="sidebar">
+    <div class="container">
+
+      <a href="/">
+        <img src="/img/avatar.jpg" class="avatar">
+      </a>
+      <div class="name-content">
+        <h1 id="name" class="pt-2"></h1>
+      </div>
+      <p class="pt-2" style="color: #bdbdbd;">Software Developer</p>
+    
+      <!-- Mobile Nav -->
+      <nav id="mobile-nav" class="nav">
+        <button class="hamburger-container btn" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-expanded="false" aria-controls="nav-dropdown" onclick="myFunction(this)">
+          <div class="bar-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="menu">
+            <span>Menu</span>  
+          </div>
+        </button>
+
+        <div id="nav-dropdown" class="collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="about.html" class="nav-link">
+                <i class="fas fa-book"></i>
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">
+                <i class="fas fa-cog"></i>
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+                <a href="experience.html" class="nav-link">
+                  <i class="fas fa-briefcase"></i>
+                  Experience
+                </a>
+              </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <ul id="desktop-nav" class="navbar-nav">
+        <li class="nav-item active">
+          <a href="about.html" class="nav-link">
+            <i class="fas fa-book"></i>
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link">
+            <i class="fas fa-cog"></i>
+            Portfolio
+          </a>
+        </li>
+        <li class="nav-item">
+            <a href="experience.html" class="nav-link">
+              <i class="fas fa-briefcase"></i>
+              Experience
+            </a>
+          </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            <i class="fas fa-envelope"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+      
+      <p class="copyright">
+        &copy; 2018 Tom Eloe
+      </p>
+
+    </div> 
+  </div>  
+      
+   <div class="main-content">
+    <div class="container content-container">
+      <h2>Portfolio</h2>
+      <p class="text-muted">I love learning new things and taking on new challenges. Working on projects is one of my favorite ways to learn and improve my skill set. Check out some of my recent work. </p>
+      <section class="content-section mb-5" id="portfolio" data-aos="fade-in" data-aos-duration="1500">
+        <div class="content-section-heading text-center">
+          <hr class="my-4">
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 content">
+            <img class="img-fluid project-image" src="/img/todo.png" alt="">
+          </div>
+          
+          <div class="col-md-6">
+            <div class="row mb-3">
+              <div class="col-md-11 col-10">
+                <h5 class="mb-3">To Do Checklist</h5>
+                <p class="content-text text-muted">Django To-Do List app that implements CRUD operations with users allowing them to create, read, update and delete lists and save them to a database. Uses Bootstrap framework for styling.</p>
+                <a class="btn project-link" href="https://github.com/teloe/to_do_list">View Source <i class="fab fa-github fa-project"></i></a>
+                <p class="tech pt-4">TECHNOLOGIES</p>
+                <ul class="list-inline list-icons m-0">
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                    <i class="devicon devicon-django-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="devicon devicon-python-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="devicon devicon-bootstrap-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="devicon devicon-html5-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="devicon devicon-css3-plain-wordmark"></i>
+                  </li>
+                </ul>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5">
+        <div class="row crypto-row">
+          <div class="col-md-6">
+            <div class="col-md-11 col-10">
+              <h5 class="mb-3">Crypto Currency Portfolio</h5>
+              <p class="content-text text-muted">Ruby on Rails application that allows users to view real-time pricing of cryptocurrencies and track their total gain/ loss on investment. Implements Bootstrap 3 framework and the Coin Market Cap API.</p>
+              <a class="btn project-link" href="https://github.com/teloe/rails_crypto">View Source <i class="fab fa-github fa-project"></i></a>
+              <p class="tech pt-4">TECHNOLOGIES</p>
+              <ul class="list-inline list-icons m-0">
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                  <i class="devicon devicon-ruby-plain-wordmark"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                  <i class="devicon devicon-rails-plain"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                  <i class="devicon devicon-bootstrap-plain"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="devicon devicon-html5-plain-wordmark"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="devicon devicon-css3-plain-wordmark"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 content">
+            <img class="img-fluid project-image" src="/img/crypto.png" alt="crypto">
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        <div class="row">
+          <div class="col-md-6 content">
+            <img class="img-fluid project-image" src="/img/guac.png" alt="">
+          </div>
+
+          <div class="col-md-6">
+              <div class="col-md-11 col-10">
+                <h5 class="mb-3">GuacGuy.com</h5>
+                <p class="content-text text-muted">Ruby on Rails e-commerce application where I plan to sell my awesome guacamole. Implements Spree e-commerce platform, Stripe API, and various other gems.</p>
+                <a href="https://github.com/teloe/guacguy.com" class="btn project-link">View Source <i class="fab fa-github fa-project"></i></a>
+                <p class="tech pt-4">TECHNOLOGIES</p>
+                <ul class="list-inline list-icons m-0">
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                    <i class="devicon devicon-ruby-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="devicon devicon-rails-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="devicon devicon-html5-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="devicon devicon-css3-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="devicon devicon-sass-original"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="devicon devicon-javascript-plain"></i>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </section>
+    </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+  <!-- Boostrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+  <!-- Typed JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <!-- Typed JS -->
+  <script type="text/javascript" src="/js/typed.js"></script>
+
+   <script>
+    function myFunction(e) {
+      e.classList.toggle("change");
+    }
+  </script>
+</body>
+</html>
