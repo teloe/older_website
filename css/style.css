@@ -6,6 +6,12 @@ html, body {
 h2 {
   letter-spacing: -0.1rem; }
 
+h5 {
+  padding-top: 1.5rem; }
+  @media (min-width: 768px) {
+    h5 {
+      padding-top: 0; } }
+
 .btn {
   border-radius: 0; }
 
@@ -172,6 +178,58 @@ span.typed-cursor.typed-cursor--blink {
 .content-container {
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.tech {
+  color: gray;
+  font-weight: bold;
+  font-size: 0.8rem; }
+
+.devicon {
+  font-size: 2rem;
+  color: #4B515D; }
+
+@media (max-width: 768px) {
+  .crypto-row {
+    flex-direction: column-reverse; } }
+
+.project-link {
+  font-size: 0.8rem;
+  width: 8rem;
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  background-color: #2E2E2E;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+  .project-link:hover {
+    color: #fff; }
+
+.project-link span {
+  position: relative;
+  z-index: 1; }
+
+.project-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #4285F4;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg); }
+
+.project-link:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg); }
 
 .contact-btn {
   width: 10rem;
