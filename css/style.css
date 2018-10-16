@@ -194,7 +194,7 @@ span.typed-cursor.typed-cursor--blink {
 
 .project-link {
   font-size: 0.8rem;
-  width: 8rem;
+  width: 10rem;
   border: none;
   display: block;
   text-align: center;
@@ -205,7 +205,7 @@ span.typed-cursor.typed-cursor--blink {
   position: relative;
   color: #fff;
   font-weight: bold;
-  background-color: #2E2E2E;
+  background-color: #263238;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
   .project-link:hover {
     color: #fff; }
