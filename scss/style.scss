@@ -1,0 +1,232 @@
+@import 'mixins';
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  letter-spacing: -0.02rem;
+}
+h2 {
+  letter-spacing: -0.1rem;
+}
+.btn {
+  border-radius: 0;
+}
+.avatar {
+  margin-top: 2rem;
+  border-radius: 6px;
+  width: 12rem;
+}
+
+// Mobile Nav
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+.bar1, .bar3:after {
+  margin: 0px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-3px, 5px);
+  transform: rotate(-45deg) translate(-3px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px, -6px);
+  transform: rotate(45deg) translate(-3px, -6px);
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+// Mobile Nav
+#mobile-nav{
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+  @include md {
+    display: none;
+  }
+  .hamburger-container {
+    padding-left: 0;
+    background: $sidebar-bg;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .bar-container {
+    margin-right: 4px;
+  }
+  #menu {
+    font-weight: bold;
+  }
+  #nav-dropdown{
+    width: 100%;
+  }
+}
+
+// Desktop Nav
+#desktop-nav {
+  display: none;
+  @include md {
+    display: block;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.3rem 0;
+  font-weight: bold;
+  &:hover {
+    color: #bdbdbd;
+  }
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  color: #bdbdbd;
+}
+
+// Sidebar
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $sidebar-bg;
+  width: 100%;
+  color: #fff;
+  @include md {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+  }
+}
+
+// Name
+.name-content {
+  height: 3rem;
+}
+
+#name {
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.2rem;
+}
+span.typed-cursor.typed-cursor--blink {
+  opacity: 1;
+  animation: typedjsBlink 0.8s;
+  animation-iteration-count: 6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+// About Btn
+.about {
+  border: solid 1px #fff;
+  padding: 6px 8px;
+  align-self: flex-start;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.fa-arrow-right {
+  transition: all 0.5s ease;
+}
+.about:hover .fa-arrow-right {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}
+
+.blurb {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+  @include md {
+    font-size: 2rem;  
+  }
+}
+
+
+// Index content 
+.index-content {
+  height: 60vh;
+  background-image: url(/img/1.png);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  @include md {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    .container {
+      max-width: 70%;
+    }
+  } 
+}
+
+// Main content
+.main-content {
+  min-height: 60vh;
+  @include md {
+    height: 100vh;
+    margin-left: 300px;
+    max-width: 60rem;
+  }
+}
+
+// Content container
+.content-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include md {
+    padding: 6rem 2rem 2rem;
+  }
+} 
+
+// Contact
+.contact-btn {
+  width: 10rem;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: lowercase;
+  font-weight: 500;
+  color: #fff;
+  background-color: #37474F;
+  border: none;
+  // border-radius: 40px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.contact-btn:hover {
+  background-color: #263238;
+  box-shadow: 0px 15px 20px rgba(35, 50, 56, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
