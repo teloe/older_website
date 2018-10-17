@@ -2,13 +2,19 @@
 
 html, body {
   font-family: "Poppins", sans-serif;
-  background: #fafafa;
   letter-spacing: -0.02rem;
 }
 h2 {
-  letter-spacing: -0.1rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #4B515D;
+  letter-spacing: -0.05rem;
 }
 h5 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
   padding-top: 1.5rem;
   @include md {
     padding-top: 0;
@@ -18,9 +24,20 @@ h5 {
   border-radius: 0;
 }
 .avatar {
+  width: 12rem;
   margin-top: 2rem;
   border-radius: 6px;
-  width: 12rem;
+}
+
+// Wrapper
+div.wrapper {
+  background: url('/img/1.png');
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
 }
 
 // Mobile Nav
@@ -45,23 +62,19 @@ h5 {
   -webkit-transform: rotate(45deg) translate(-3px, -6px);
   transform: rotate(45deg) translate(-3px, -6px);
 }
-
 .btn:focus, .btn:active {
    outline: none !important;
    box-shadow: none;
 }
 
 // Mobile Nav
-#mobile-nav{
-  width: 100%;
-  z-index: 10;
-  opacity: 0.9;
+#mobile-nav {
   @include md {
     display: none;
   }
   .hamburger-container {
     padding-left: 0;
-    background: $sidebar-bg;
+    background: transparent;
     color: #fff;
     text-align: right;
     width: 100%;
@@ -86,29 +99,22 @@ h5 {
     display: block;
   }
 }
-
 .nav-link {
   color: #fff;
   padding: 0.3rem 0;
   font-weight: bold;
   &:hover {
-    color: #bdbdbd;
+    color: rgba(255,255,255,.6);
   }
-}
-
-.copyright {
-  margin-top: 1.5rem;
-  font-size: 0.7rem;
-  color: #bdbdbd;
 }
 
 // Sidebar
 .sidebar {
+  background: rgba(89, 35, 56, 0.75);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: $sidebar-bg;
   width: 100%;
   color: #fff;
   @include md {
@@ -117,12 +123,25 @@ h5 {
     height: 100vh;
   }
 }
+a.contact-btn {
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 0.2rem;
+  &:hover {
+    color: #fff;
+  }
+}
+.copyright {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  color: #bdbdbd;
+}
 
 // Name
 .name-content {
   height: 3rem;
 }
-
 #name {
   display: inline-block;
   margin-right: 0.3rem;
@@ -136,6 +155,46 @@ span.typed-cursor.typed-cursor--blink {
   animation-iteration-count: 6;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+// Main content
+.main-content {
+  background-color: #fafafa;
+  min-height: 60vh;
+  @include md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: 300px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 70rem;
+  }
+}
+
+// Content container
+.content-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+// Index content 
+.index-content {
+  height: 60vh;
+  color: #fff;
+  @include md {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    .container {
+      max-width: 70%;
+    }
+  } 
 }
 
 // About Btn
@@ -167,69 +226,17 @@ span.typed-cursor.typed-cursor--blink {
   }
 }
 
-
-// Index content 
-.index-content {
-  height: 60vh;
-  background-image: url(/img/1.png);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #fff;
-  @include md {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
-    .container {
-      max-width: 70%;
-    }
-  } 
-}
-
-// Main content
-.main-content {
-  min-height: 60vh;
-  @include md {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin-left: 300px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 60rem;
-  }
-}
-
-// Content container
-.content-container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 // Portfolio
 .tech {
   color: gray;
   font-weight: bold;
   font-size: 0.8rem;
 }
-.devicon {
-  font-size: 2rem;
-  color: #4B515D;
-}
-
 .crypto-row {
   @media(max-width: 768px) {
     flex-direction: column-reverse;
   }
 }
-
 .project-link {
   font-size: 0.8rem;
   width: 10rem;
@@ -243,7 +250,7 @@ span.typed-cursor.typed-cursor--blink {
   position: relative;
   color: #fff;
   font-weight: bold;
-  background-color: #263238;
+  background: #37474F;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   &:hover {
     color: #fff;
@@ -262,9 +269,9 @@ span.typed-cursor.typed-cursor--blink {
   top: 0;
   height: 490%;
   width: 140%;
-  background: #4285F4;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  background: #2E2E2E;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
@@ -274,34 +281,24 @@ span.typed-cursor.typed-cursor--blink {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-
-
-
-
-
-
-
-
-
-// Contact
-.contact-btn {
-  width: 10rem;
-  margin-right: 1rem;
-  margin-bottom: 1.2rem;
-  text-transform: lowercase;
-  font-weight: 500;
-  color: #fff;
-  background-color: #37474F;
-  border: none;
-  // border-radius: 40px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+// Experience
+.list-inline-item {
+  i {
+    font-size: 2.5rem;
+    padding-right: 0.5rem;
+    color: #bdbdbd;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #4B515D;
+    }
+  }
 }
-.contact-btn:hover {
-  background-color: #263238;
-  box-shadow: 0px 15px 20px rgba(35, 50, 56, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+.subheading {
+  font-size: 1.4rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+.resume-date {
+  @include md {
+    min-width: 12rem;
+  }
 }

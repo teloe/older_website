@@ -1,177 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/logo.png">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
-  <!-- Devicons -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/logo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+    <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <!-- Main styles -->
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <title>Tom Eloe</title>
-</head>
-<body>
-      
-  <div class="sidebar">
-    <div class="container">
-
-      <a href="/">
-        <img src="/img/avatar.jpg" class="avatar">
-      </a>
-      <div class="name-content">
-        <h1 id="name" class="pt-2"></h1>
-      </div>
-      <p class="pt-2" style="color: #bdbdbd;">Web Developer</p>
-    
-      <!-- Mobile Nav -->
-      <nav id="mobile-nav" class="nav">
-        <button class="hamburger-container btn" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-expanded="false" aria-controls="nav-dropdown" onclick="myFunction(this)">
-          <div class="bar-container">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <!-- Main styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Tom Eloe</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="container">
+          <a href="/">
+            <img src="/img/avatar.jpg" class="avatar">
+          </a>
+          <div class="name-content">
+            <h1 id="name" class="pt-2"></h1>
           </div>
-          <div id="menu">
-            <span>Menu</span>  
-          </div>
-        </button>
-
-        <div id="nav-dropdown" class="collapse">
-          <ul class="navbar-nav">
+          <p class="pt-2" style="color: #bdbdbd;">Web Developer</p>
+          
+          <!-- Mobile Nav -->
+          <nav id="mobile-nav" class="nav">
+            <button class="hamburger-container btn" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-expanded="false" aria-controls="nav-dropdown" onclick="myFunction(this)">
+            <div class="bar-container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div id="menu">
+              <span>MENU</span>
+            </div>
+            </button>
+            <div id="nav-dropdown" class="collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a href="about.html" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    ABOUT
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link">
+                    <i class="fas fa-cog"></i>
+                    PROJECTS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="experience.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    EXPERIENCE
+                  </a>
+                </li>
+              </ul>
+              <div class="contact pt-2">
+                <span class="font-weight-bold d-block mb-0">GET IN TOUCH</span>
+                <a href="mailto:tomeloe@gmail.com" target="_blank" class="contact-btn">
+                  <i class="fas fa-envelope-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tomeloe/" class="contact-btn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/teloe" class="contact-btn">
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <!-- Desktop Nav -->
+          <ul id="desktop-nav" class="navbar-nav">
             <li class="nav-item active">
               <a href="about.html" class="nav-link">
                 <i class="fas fa-book"></i>
-                About
+                ABOUT
               </a>
             </li>
             <li class="nav-item">
               <a href="portfolio.html" class="nav-link">
                 <i class="fas fa-cog"></i>
-                Portfolio
+                PROJECTS
               </a>
             </li>
             <li class="nav-item">
-                <a href="experience.html" class="nav-link">
-                  <i class="fas fa-briefcase"></i>
-                  Experience
-                </a>
-              </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">
-                <i class="fas fa-envelope"></i>
-                Contact
+              <a href="experience.html" class="nav-link">
+                <i class="fas fa-briefcase"></i>
+                EXPERIENCE
               </a>
+            </li>
+            <div class="contact pt-2">
+              <span class="font-weight-bold d-block mb-0">GET IN TOUCH</span>
+              <a href="mailto:tomeloe@gmail.com" target="_blank" class="contact-btn">
+                <i class="fas fa-envelope-square"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tomeloe/" class="contact-btn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/teloe" class="contact-btn">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </div>
+          </ul>
+          
+          <p class="copyright">
+            &copy; 2018 Tom Eloe
+          </p>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="main-content">
+        <div class="container content-container">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons mb-5">
+            <li class="list-inline-item">
+              <i class="devicon-html5-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-css3-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-javascript-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-sass-original"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="devicon-wordpress-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-gulp-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-rails-plain-wordmark"></i>
             </li>
           </ul>
-        </div>
-      </nav>
-
-      <!-- Desktop Nav -->
-      <ul id="desktop-nav" class="navbar-nav">
-        <li class="nav-item active">
-          <a href="about.html" class="nav-link">
-            <i class="fas fa-book"></i>
-            About
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="portfolio.html" class="nav-link">
-            <i class="fas fa-cog"></i>
-            Portfolio
-          </a>
-        </li>
-        <li class="nav-item">
-            <a href="experience.html" class="nav-link">
-              <i class="fas fa-briefcase"></i>
-              Experience
-            </a>
-          </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            <i class="fas fa-envelope"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-      
-      <p class="copyright">
-        &copy; 2018 Tom Eloe
-      </p>
-
-    </div> 
-  </div>  
-      
-   <div class="main-content">
-    <div class="container content-container">
-      <h2>Experience</h2>
-      <div class="my-5" data-aos="fade-in" data-aos-duration="1500">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="timeline">
-              <i class="fas fa-briefcase"></i>
-              <li class="timeline-list-item">
-                <a target="_blank" href="https://mycherrytree.com/">CherryTree, Inc.</a>
-                <span class="text-secondary float-right">Apr 2018 - Present</span><br>
-                <span class="text-secondary">Software Developer</span>
-                <p class="text-muted pt-2">Developed company website from scratch using Ruby on Rails and various gems.</p>
-              </li>
-              <i class="fas fa-briefcase"></i>
-              <li class="timeline-list-item">
-                <a href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a>
-                <span class="text-secondary float-right">Aug 2017 - Apr 2018</span><br>
-                <span class="text-secondary">Student/ Resident</span>
-                <p class="text-muted pt-2">Completed 14 week immersive training program, gaining over 1000 hours of intensive coding experience.</p>
-              </li>
-              <i class="fas fa-briefcase"></i>
-              <li class="timeline-list-item">
-                <a href="https://agents.allstate.com/robert-feldman-glendale-ca.html" target="_blank">Allstate, La Crescenta Insurance Services, Inc.</a>
-                <span class="text-secondary float-right">May 2015 - Aug 2017</span><br>
-                <span class="text-secondary">Agency Manager</span>
-                <p class="text-muted pt-2">Managed 10 - 15 staff between three branch locations at one of the largest Allstate Insurance agencies in California.</p>
-              </li>
-            </ul>
-            <h4 class="my-3">Education</h4>
-            <ul class="timeline">
-              <i class="fas fa-graduation-cap"></i>
-              <li class="timeline-list-item">
-                <a target="_blank" href="https://www.sdsu.edu/">San Diego State University</a>
-                <span class="text-secondary float-right">Dec 2009</span>
-                <p class="text-muted">Bachelor of Science Psychology</p>
-              </li>
-            </ul>
+          <h2 class="mb-5">Experience</h2>
+          
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Software Developer</h5>
+              <div class="subheading mb-3">CherryTree, Inc.</div>
+              <p class="text-muted">Developed company website from scratch using Ruby on Rails and various gems.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">April 2018 - Present</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Student/ Resident</h5>
+              <div class="subheading mb-3">Coding Dojo</div>
+              <p class="text-muted">Completed 14 week immersive training program, gaining over 1000 hours of intensive coding experience.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">Aug 2017 - Apr 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Agency Manager</h5>
+              <div class="subheading mb-3">Allstate, La Crescenta Insurance Services, Inc.</div>
+              <p class="text-muted">Directed sales campaigns which resulted in agency becoming the top Allstate commercial lines producer in CA.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">May 2015 - Aug 2017</span>
+            </div>
+          </div>
+          <h2 class="mb-5">Education</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">San Diego State University</h5>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <p class="text-muted">Psychology</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">Dec 2009</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Popper -->
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-  <!-- Boostrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-          crossorigin="anonymous"></script>
-  <!-- Typed JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-  <!-- Typed JS -->
-  <script type="text/javascript" src="/js/typed.js"></script>
-
-   <script>
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <!-- Boostrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <!-- Typed JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <!-- Typed JS -->
+    <script type="text/javascript" src="/js/typed.js"></script>
+    <script>
     function myFunction(e) {
-      e.classList.toggle("change");
+    e.classList.toggle("change");
     }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
