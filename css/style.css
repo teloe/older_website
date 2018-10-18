@@ -120,7 +120,7 @@ div.wrapper:before {
 a.contact-btn {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-right: 0.2rem; }
   a.contact-btn:hover {
     color: #fff; }
