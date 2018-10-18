@@ -178,12 +178,13 @@ span.typed-cursor.typed-cursor--blink {
     margin-left: 300px;
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 70rem;
+    // max-width: 70rem;
   }
 }
 
 // Content container
 .content-container {
+  margin-left: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
