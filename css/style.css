@@ -175,9 +175,9 @@ span.typed-cursor.typed-cursor--blink {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       margin-left: 300px;
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .about {
   border: solid 1px #fff;
