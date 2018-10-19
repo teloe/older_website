@@ -176,7 +176,8 @@ span.typed-cursor.typed-cursor--blink {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 300px; }
+      margin-left: 300px;
+      padding-left: 2rem; }
       .index-content .container {
         max-width: 70%; } }
 
