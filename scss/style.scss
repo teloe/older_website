@@ -181,9 +181,11 @@ span.typed-cursor.typed-cursor--blink {
   }
 }
 
-// Content container
-.content-container {
+// Container
+.container {
   margin-left: 0;
+}
+.content-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

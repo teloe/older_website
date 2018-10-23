@@ -161,8 +161,10 @@ span.typed-cursor.typed-cursor--blink {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
+.container {
+  margin-left: 0; }
+
 .content-container {
-  margin-left: 0;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
