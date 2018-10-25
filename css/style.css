@@ -104,7 +104,7 @@ div.wrapper:before {
     color: rgba(255, 255, 255, 0.6); }
 
 .sidebar {
-  background: rgba(89, 35, 56, 0.75);
+  background: rgba(16, 59, 59, 0.75);
   display: flex;
   flex-direction: column;
   align-items: center;
