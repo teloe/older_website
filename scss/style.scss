@@ -108,11 +108,11 @@ div.wrapper:before {
   }
 }
 .nav-link {
-  color: #fff;
+  color: rgba(255,255,255,.75);
   padding: 0.3rem 0;
   font-weight: bold;
   &:hover {
-    color: rgba(255,255,255,.6);
+    color: #fff;
   }
 }
 
@@ -132,10 +132,10 @@ div.wrapper:before {
   }
 }
 a.contact-btn {
-  color: rgba(255,255,255,.6);
+  color: rgba(255,255,255,.75);
   text-decoration: none;
-  font-size: 1.6rem !important;
-  margin-right: 0.2rem;
+  font-size: 1.5rem !important;
+  margin-right: 0.25rem;
   &:hover {
     color: #fff;
   }
@@ -143,7 +143,7 @@ a.contact-btn {
 .copyright {
   margin-top: 1.5rem;
   font-size: 0.7rem;
-  color: #bdbdbd;
+  color: rgba(255,255,255,.75);
 }
 
 // Name
